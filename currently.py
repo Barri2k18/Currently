@@ -18,7 +18,7 @@ from discord import Game, Embed, Color, Status, ChannelType
 owner = ["362672438699622403"]
 developer = ["362672438699622403"]
 
-BOT_PREFIX = ("-", "d!", "366579653395349505", "<@366579653395349505>", ",")
+BOT_PREFIX = ("<", "§", "c", "em", "ga")
 
 #timestamp=datetime.datetime.utcfromtimestamp(1541415948)
 
@@ -32,7 +32,7 @@ server1 = bot.get_server(472829296940154901)
 
 async def status_task():
     while True:
-        await bot.change_presence(game=discord.Game(name='for -help', type=1))
+        await bot.change_presence(game=discord.Game(name='for <help', type=1))
         await asyncio.sleep(5)
         await bot.change_presence(game=discord.Game(name='with '+str(len(set(bot.get_all_members())))+' users', type=1))
         await asyncio.sleep(3)
@@ -40,7 +40,7 @@ async def status_task():
         await asyncio.sleep(3)
         await bot.change_presence(game=discord.Game(name='with my emotes.', type=1))
         await asyncio.sleep(3)
-        await bot.change_presence(game=discord.Game(name='Barry#0828', type=1))
+        await bot.change_presence(game=discord.Game(name='oofy#0828', type=1))
         await asyncio.sleep(1)
      
          # ------------ Oofy      
